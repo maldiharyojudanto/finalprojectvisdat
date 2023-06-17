@@ -59,8 +59,8 @@ def main():
 
     # Membuat ColumnDataSource: source
     source = ColumnDataSource(data={
-        'x'       : data.loc[slider].Malaria,
-        'y'       : data.loc[slider].Drowning,
+        'x'       : data.loc[slider][x_select],
+        'y'       : data.loc[slider][y_select],
         'country' : data.loc[slider].Country,
     })
 
